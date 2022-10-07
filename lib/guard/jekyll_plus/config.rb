@@ -15,7 +15,10 @@ module Guard
           future: false,
           config_hash: nil,
           silent: false,
-          msg_prefix: 'Jekyll '
+          msg_prefix: 'Jekyll ',
+          baseurl: "/",
+          source: "/",
+          destination: "/_site"
         }.merge(options)
 
         @jekyll_config = load_config(@options)
