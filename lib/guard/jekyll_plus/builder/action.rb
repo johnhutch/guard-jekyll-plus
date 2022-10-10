@@ -112,7 +112,7 @@ module Guard
           dir = File.dirname path
           return if Dir[dir + '/*'].any?
 
-          FileUtils.rm_rk(dir)
+          FileUtils.rm_rf(dir)
           puts '|' + '  x '.red + dir
         end
 
